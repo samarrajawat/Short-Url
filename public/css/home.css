@@ -1,0 +1,145 @@
+body {
+    background: linear-gradient(to right, #614385, #00c9ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+form {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+input {
+    width: 350px;
+    font-size: 1.1em;
+    padding: 12px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 2px solid #00c9ff;
+    outline: none;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #6e45e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #564bb1;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.GeneratedUrl {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width:100%;
+    max-width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    overflow-x: auto;
+}
+
+thead {
+    background-color: #6e45e2;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+th.small, td.small {
+    width: 10%;
+}
+
+th.id, td.id {
+    width: 20%;
+}
+
+
+tr:hover {
+    background-color: #564bb1;
+}
+
+/* Add zebra striping to the table rows */
+tbody tr:nth-child(even) {
+    background-color:#6e45e2;
+}
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 250px;
+    }
+    
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    table {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

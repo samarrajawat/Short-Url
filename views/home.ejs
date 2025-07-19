@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+ 
+</head>
+<body>
+    <h1>URL SHORTNER</h1>
+    <div class="cont"></div>
+    <form action="/url" method="post">    
+       <label>Enter your original url :</label>
+        <input type="text" name="url" placeholder="https://www.samar.com"/>
+       <button type="submit" >Generate</button>
+   
+
+    </form>
+</div>
+    <% if (locals.id) { %>
+     <p class="GeneratedUrl">URL Generated : http://localhost:5001/url/<%=id %></p>
+    <% } %>
+    <div>
+        <% if (locals.urls) { %>
+         <table>
+            <thead>
+                <th class="small">S. No</th>
+                <th class="id" >ShortID</th>
+                <th >Redirect</th>
+                <th class="small">Clicks</th>
+            </thead>
+            <tbody>
+                <% urls.forEach((url,index) => { %>
+                    <tr>
+                 <td class="small"><%= index+1 %></td>
+                 <td class="id"><%= url.shortId %></td>
+                 <td><%= url.redirectUrl %></td>
+                 <td class="small"><%= url.visetedHistory.length%></td>
+                </tr>
+                <% }) %>
+            </tbody>
+         </table>
+        <% } %>
+</div>
+</body>
+</html>
