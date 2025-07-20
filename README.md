@@ -12,6 +12,18 @@ Short url is a simple and efficient URL shortener built with Node.js. It allows 
 - Simple API for integration
 - Easy to set up and run locally
 
+##  Screenshots
+
+##  Signup Page
+![Signup Page](assets/signup.png)
+
+##  Login Page
+![Login Page](assets/login.png)
+
+##  Home Page
+![Home Page](assets/home.png)
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -23,8 +35,8 @@ Short url is a simple and efficient URL shortener built with Node.js. It allows 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd Short\ Url
+   git clone https://github.com/samarrajawat/Short-Url.git
+   cd Short-Url
    ```
 
 2. Install dependencies:
